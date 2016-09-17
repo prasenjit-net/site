@@ -27,3 +27,5 @@ github_username:  prasenjit-net
 # Build settings
 markdown: kramdown
 theme: minima
+
+host: 10.0.2.15
