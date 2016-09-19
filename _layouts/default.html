@@ -40,7 +40,14 @@
                 <div class="row">
                     {% for category in site.categories %}
                     <div class="col-lg-6">
-                        <a name="{{ category | first }}">{{ category | first }}</a>
+                        <h4 name="{{ category | first }}">{{ category | first }}</h4>
+                        <ul>
+                            {% for posts in category %}
+                            {% for post in posts %}
+                            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                            {% endfor %}
+                            {% endfor %}
+                        </ul>
                     </div>
                     {% endfor %}
                     <!-- /.col-lg-6 -->
