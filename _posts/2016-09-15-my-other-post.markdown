@@ -4,6 +4,8 @@ title:  "My Other Post"
 date:   2016-09-15 17:32:41 -0400
 categories: jekyll update
 ---
+This is a test post.
+
 ## My Other Post
 
 Hi, my name is Prasenjit Purohit.
