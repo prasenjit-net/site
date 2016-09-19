@@ -11,7 +11,7 @@
       </button>
         {% assign custom_url = site.url | append: site.baseurl %}
         {% assign full_base_url = site.github.url | default: custom_url %}
-      <a class="navbar-brand" href="{{ full_base_url }}/">{{ site.title | escape }}</a>
+      <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title | escape }}</a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -19,7 +19,7 @@
           {% for my_page in site.pages %}
           {% if my_page.title %}
           <li>
-              <a href="{{ my_page.url | prepend: full_base_url }}">{{ my_page.title | escape }}</a>
+              <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title | escape }}</a>
           </li>
           {% endif %}
           {% endfor %}
