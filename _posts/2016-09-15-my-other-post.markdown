@@ -2,7 +2,7 @@
 layout: post
 title:  "My Other Post"
 date:   2016-09-15 17:32:41 -0400
-categories: jekyll update
+categories: test
 ---
 This is a test post.
 
