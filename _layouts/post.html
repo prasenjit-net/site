@@ -25,10 +25,10 @@ layout: default
         <!-- Place this tag where you want the share button to render. -->
         <div class="g-plus" data-action="share"></div>
     </div>
-    <div class="fb-share-button" data-href="http://www.prasenjit.net/test/2016/09/19/how-i-created-this-blog.html"
-         data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore"
-                                                                                   target="_blank"
-                                                                                   href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.prasenjit.net%2Ftest%2F2016%2F09%2F19%2Fhow-i-created-this-blog.html&amp;src=sdkpreparse">Share</a>
+    <div class="fb-share-button" data-href="{{ post.url | prepend: site.baseurl }}"
+         data-layout="button_count" data-size="small" data-mobile-iframe="true">
+        <a class="fb-xfbml-parse-ignore" target="_blank"
+           href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.prasenjit.net%2Ftest%2F2016%2F09%2F19%2Fhow-i-created-this-blog.html&amp;src=sdkpreparse">Share</a>
     </div>
 
     {% if site.disqus.shortname %}
